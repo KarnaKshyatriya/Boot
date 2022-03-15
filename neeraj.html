@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 2000px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="demo">Namaste world</h1>
+    <h1 id="demox">Namaste Neeraj</h1>
+
+    <script>
+        window.addEventListener('wheel',function neeraj(event){
+            // console.log("scrolling")
+            var y=event.deltaY;
+            var x=event.deltaX;
+            document.getElementById("demo").innerHTML = y;
+            document.getElementById("demox").innerHTML = x;
+            console.log(y);
+            console.log(x);
+        });
+        
+    </script>
+</body>
+</html>

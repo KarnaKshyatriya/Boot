@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<body>
+    <p id="first"> Hello World</p>
+    
+    <button id="btn" onClick='neeraj()'>Some Button</button>
+    <p id="some"> Hello </p>
+
+    <script>
+var v=document.getElementById('first');
+v.addEventListener('click',myFunction);
+function myFunction() {
+  document.getElementById("first").style.color='red';
+  document.getElementById("first").style.fontFamily='Freestyle Script';
+  document.getElementById("first").style.fontSize='10em';
+  
+}
+
+function neeraj(){
+    if(confirm("Some Demo text")){
+var f=document.getElementById('some');
+f.innerHTML="<h1>Button has been clicked</h1>";
+    }
+}
+    </script>
+</body>
+</html>
